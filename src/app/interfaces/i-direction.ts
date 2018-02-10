@@ -1,2 +1,3 @@
-export class IDirection {
+export interface IDirection {
+    direction: number;
 }

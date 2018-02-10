@@ -1,6 +1,9 @@
 import { IPosition } from "./i-position";
+import { IDirection } from './i-direction';
+import { ICharacterType } from './i-character-type';
 
-export abstract class ICharacter {
-    public position: IPosition
-
+export interface ICharacter {
+    position: IPosition;
+    type: ICharacterType;
+    move(direction: IDirection);
 }
